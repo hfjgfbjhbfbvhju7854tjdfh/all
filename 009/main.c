@@ -26,16 +26,15 @@ n= strlen (buff);
 for (i=0; i<n; i++) {
   char p;
   p = buff [i];
-  buff_all [i]
-  printf ("%s\n", buff);
+  buff_all [n-i-1] = p;
 }
 
-
-printf ("%s", buff);
+buff_all [n] = 0;
+printf ("%s\n", buff_all);
 
 }
 
-printf("\n");
+//printf("\n");
 
 pclose(pip_w);
 
